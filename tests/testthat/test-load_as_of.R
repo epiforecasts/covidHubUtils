@@ -34,5 +34,4 @@ test_that("load_latest_forecasts uses as_of correctly",{
   #Assert statements to test the change
   expect_true(all(version2[version2$diff!=0,]$location == 'US'))
   expect_true(all(version2[version2$diff!=0,]$target_variable == 'inc death'))
-  
 })
